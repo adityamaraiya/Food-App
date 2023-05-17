@@ -41,11 +41,11 @@ const Body = () => {
   return allRestaurants.length === 0 ? (
     <Shimmer />
   ) : (
-    <>
-      <div className="m-auto flex items-center justify-evenly py-10">
+    <div>
+      <div className="my-10 flex items-center justify-center ">
         <input
           type="text"
-          className=""
+          className="w-[500px] rounded-md border px-2 py-1 text-base focus:border-gray-500 focus:outline-none focus:ring-0"
           placeholder="Search"
           value={searchText}
           onChange={(e) => {
@@ -53,7 +53,7 @@ const Body = () => {
           }}
         />
         <button
-          className="h-10 rounded-md bg-orange-400 px-6 font-semibold text-white"
+          className=" rounded-md border-2 border-orange-400 bg-orange-400 py-1 font-semibold text-white"
           onClick={() => {
             const data = filterData(searchText, allRestaurants);
             setFilteredRestaurants(data);
@@ -75,7 +75,7 @@ const Body = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

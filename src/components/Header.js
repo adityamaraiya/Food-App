@@ -8,6 +8,8 @@ const Title = () => <img className="h-28" src={logo} alt="logo" />;
 
 const Header = () => {
   const cartItems = useSelector((store) => store.cart.items);
+
+  console.log(cartItems);
   return (
     <div className=" flex justify-between  bg-white px-[20px] shadow-lg ">
       <Link to="/">

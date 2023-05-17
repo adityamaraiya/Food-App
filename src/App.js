@@ -15,6 +15,7 @@ import { Provider } from "react-redux";
 import store from "./utils/Store";
 import Cart from "./components/Cart";
 import SignIn from "./components/SignIn";
+import SignUp from "./components/SignUp";
 
 const AppLayout = () => {
   return (
@@ -47,6 +48,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/signin",
         element: <SignIn />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
       },
       {
         path: "/cart",
