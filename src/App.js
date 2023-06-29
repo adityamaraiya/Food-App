@@ -12,7 +12,7 @@ import RestaurantDetail from "./components/RestaurantDetail";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import { Provider } from "react-redux";
-import store from "./utils/Store";
+import store from "./utils/store";
 import Cart from "./components/Cart";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
